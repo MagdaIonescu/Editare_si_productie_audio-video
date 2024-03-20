@@ -34,15 +34,6 @@ C:\Users\Magda\Desktop\An 3, sem 2\Editare_AudioVideo-laborator\Editare_si_produ
 C:\Users\Magda\Desktop\An 3, sem 2\Editare_AudioVideo-laborator\Editare_si_productie_audio-video\Laboratorul1\Laboratorul1\obj\x86\Debug\Laborato.26BDF493.Up2Date
 C:\Users\Magda\Desktop\An 3, sem 2\Editare_AudioVideo-laborator\Editare_si_productie_audio-video\Laboratorul1\Laboratorul1\obj\x86\Debug\Laboratorul1.exe
 C:\Users\Magda\Desktop\An 3, sem 2\Editare_AudioVideo-laborator\Editare_si_productie_audio-video\Laboratorul1\Laboratorul1\obj\x86\Debug\Laboratorul1.pdb
-C:\Users\Magda\Desktop\An3-sem2\Editare_AudioVideo-laborator\Editare_si_productie_audio-video\Laboratorul1\Laboratorul1\obj\x86\Debug\Laboratorul1.csproj.AssemblyReference.cache
-C:\Users\Magda\Desktop\An3-sem2\Editare_AudioVideo-laborator\Editare_si_productie_audio-video\Laboratorul1\Laboratorul1\obj\x86\Debug\Laboratorul1.csproj.SuggestedBindingRedirects.cache
-C:\Users\Magda\Desktop\An3-sem2\Editare_AudioVideo-laborator\Editare_si_productie_audio-video\Laboratorul1\Laboratorul1\obj\x86\Debug\Laboratorul1.exe.config
-C:\Users\Magda\Desktop\An3-sem2\Editare_AudioVideo-laborator\Editare_si_productie_audio-video\Laboratorul1\Laboratorul1\obj\x86\Debug\Laboratorul1.Form1.resources
-C:\Users\Magda\Desktop\An3-sem2\Editare_AudioVideo-laborator\Editare_si_productie_audio-video\Laboratorul1\Laboratorul1\obj\x86\Debug\Laboratorul1.Properties.Resources.resources
-C:\Users\Magda\Desktop\An3-sem2\Editare_AudioVideo-laborator\Editare_si_productie_audio-video\Laboratorul1\Laboratorul1\obj\x86\Debug\Laboratorul1.csproj.GenerateResource.cache
-C:\Users\Magda\Desktop\An3-sem2\Editare_AudioVideo-laborator\Editare_si_productie_audio-video\Laboratorul1\Laboratorul1\obj\x86\Debug\Laboratorul1.csproj.CoreCompileInputs.cache
-C:\Users\Magda\Desktop\An3-sem2\Editare_AudioVideo-laborator\Editare_si_productie_audio-video\Laboratorul1\Laboratorul1\obj\x86\Debug\Laboratorul1.exe
-C:\Users\Magda\Desktop\An3-sem2\Editare_AudioVideo-laborator\Editare_si_productie_audio-video\Laboratorul1\Laboratorul1\obj\x86\Debug\Laboratorul1.pdb
 C:\Users\Magda\Desktop\An3-sem2\Editare_AudioVideo-laborator\Editare_si_productie_audio-video\Laboratorul1\Laboratorul1\bin\x86\Debug\Laboratorul1.exe.config
 C:\Users\Magda\Desktop\An3-sem2\Editare_AudioVideo-laborator\Editare_si_productie_audio-video\Laboratorul1\Laboratorul1\bin\x86\Debug\Laboratorul1.exe
 C:\Users\Magda\Desktop\An3-sem2\Editare_AudioVideo-laborator\Editare_si_productie_audio-video\Laboratorul1\Laboratorul1\bin\x86\Debug\Laboratorul1.pdb
@@ -69,4 +60,16 @@ C:\Users\Magda\Desktop\An3-sem2\Editare_AudioVideo-laborator\Editare_si_producti
 C:\Users\Magda\Desktop\An3-sem2\Editare_AudioVideo-laborator\Editare_si_productie_audio-video\Laboratorul1\Laboratorul1\bin\x86\Debug\System.Text.Json.dll
 C:\Users\Magda\Desktop\An3-sem2\Editare_AudioVideo-laborator\Editare_si_productie_audio-video\Laboratorul1\Laboratorul1\bin\x86\Debug\System.Threading.Tasks.Extensions.dll
 C:\Users\Magda\Desktop\An3-sem2\Editare_AudioVideo-laborator\Editare_si_productie_audio-video\Laboratorul1\Laboratorul1\bin\x86\Debug\System.ValueTuple.dll
+C:\Users\Magda\Desktop\An3-sem2\Editare_AudioVideo-laborator\Editare_si_productie_audio-video\Laboratorul1\Laboratorul1\obj\x86\Debug\Laboratorul1.csproj.AssemblyReference.cache
+C:\Users\Magda\Desktop\An3-sem2\Editare_AudioVideo-laborator\Editare_si_productie_audio-video\Laboratorul1\Laboratorul1\obj\x86\Debug\Laboratorul1.csproj.SuggestedBindingRedirects.cache
+C:\Users\Magda\Desktop\An3-sem2\Editare_AudioVideo-laborator\Editare_si_productie_audio-video\Laboratorul1\Laboratorul1\obj\x86\Debug\Laboratorul1.exe.config
+C:\Users\Magda\Desktop\An3-sem2\Editare_AudioVideo-laborator\Editare_si_productie_audio-video\Laboratorul1\Laboratorul1\obj\x86\Debug\Laboratorul1.Form1.resources
+C:\Users\Magda\Desktop\An3-sem2\Editare_AudioVideo-laborator\Editare_si_productie_audio-video\Laboratorul1\Laboratorul1\obj\x86\Debug\Laboratorul1.Properties.Resources.resources
+C:\Users\Magda\Desktop\An3-sem2\Editare_AudioVideo-laborator\Editare_si_productie_audio-video\Laboratorul1\Laboratorul1\obj\x86\Debug\Laboratorul1.csproj.GenerateResource.cache
+C:\Users\Magda\Desktop\An3-sem2\Editare_AudioVideo-laborator\Editare_si_productie_audio-video\Laboratorul1\Laboratorul1\obj\x86\Debug\Laboratorul1.csproj.CoreCompileInputs.cache
 C:\Users\Magda\Desktop\An3-sem2\Editare_AudioVideo-laborator\Editare_si_productie_audio-video\Laboratorul1\Laboratorul1\obj\x86\Debug\Laborato.26BDF493.Up2Date
+C:\Users\Magda\Desktop\An3-sem2\Editare_AudioVideo-laborator\Editare_si_productie_audio-video\Laboratorul1\Laboratorul1\obj\x86\Debug\Laboratorul1.exe
+C:\Users\Magda\Desktop\An3-sem2\Editare_AudioVideo-laborator\Editare_si_productie_audio-video\Laboratorul1\Laboratorul1\obj\x86\Debug\Laboratorul1.pdb
+C:\Users\Magda\Desktop\An3-sem2\Editare_AudioVideo-laborator\Editare_si_productie_audio-video\Laboratorul1\Laboratorul1\bin\x86\Debug\BusinessLogic.dll
+C:\Users\Magda\Desktop\An3-sem2\Editare_AudioVideo-laborator\Editare_si_productie_audio-video\Laboratorul1\Laboratorul1\bin\x86\Debug\BusinessLogic.pdb
+C:\Users\Magda\Desktop\An3-sem2\Editare_AudioVideo-laborator\Editare_si_productie_audio-video\Laboratorul1\Laboratorul1\bin\x86\Debug\BusinessLogic.dll.config

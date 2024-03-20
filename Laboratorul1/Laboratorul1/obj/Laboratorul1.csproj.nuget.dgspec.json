@@ -4,6 +4,21 @@
     "C:\\Users\\Magda\\Desktop\\An3-sem2\\Editare_AudioVideo-laborator\\Editare_si_productie_audio-video\\Laboratorul1\\Laboratorul1\\Laboratorul1.csproj": {}
   },
   "projects": {
+    "C:\\Users\\Magda\\Desktop\\An3-sem2\\Editare_AudioVideo-laborator\\Editare_si_productie_audio-video\\Laboratorul1\\BusinessLogic\\BusinessLogic.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Magda\\Desktop\\An3-sem2\\Editare_AudioVideo-laborator\\Editare_si_productie_audio-video\\Laboratorul1\\BusinessLogic\\BusinessLogic.csproj",
+        "projectName": "BusinessLogic",
+        "projectPath": "C:\\Users\\Magda\\Desktop\\An3-sem2\\Editare_AudioVideo-laborator\\Editare_si_productie_audio-video\\Laboratorul1\\BusinessLogic\\BusinessLogic.csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
     "C:\\Users\\Magda\\Desktop\\An3-sem2\\Editare_AudioVideo-laborator\\Editare_si_productie_audio-video\\Laboratorul1\\Laboratorul1\\Laboratorul1.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -27,7 +42,11 @@
         },
         "frameworks": {
           "net472": {
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\Magda\\Desktop\\An3-sem2\\Editare_AudioVideo-laborator\\Editare_si_productie_audio-video\\Laboratorul1\\BusinessLogic\\BusinessLogic.csproj": {
+                "projectPath": "C:\\Users\\Magda\\Desktop\\An3-sem2\\Editare_AudioVideo-laborator\\Editare_si_productie_audio-video\\Laboratorul1\\BusinessLogic\\BusinessLogic.csproj"
+              }
+            }
           }
         },
         "restoreAuditProperties": {

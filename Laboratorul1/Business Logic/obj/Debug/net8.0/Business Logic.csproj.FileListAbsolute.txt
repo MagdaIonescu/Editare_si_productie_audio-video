@@ -1,0 +1,7 @@
+C:\Users\Magda\Desktop\An3-sem2\Editare_AudioVideo-laborator\Editare_si_productie_audio-video\Laboratorul1\Business Logic\obj\Debug\net8.0\Business Logic.csproj.AssemblyReference.cache
+C:\Users\Magda\Desktop\An3-sem2\Editare_AudioVideo-laborator\Editare_si_productie_audio-video\Laboratorul1\Business Logic\obj\Debug\net8.0\Business Logic.csproj.ResolveComReference.cache
+C:\Users\Magda\Desktop\An3-sem2\Editare_AudioVideo-laborator\Editare_si_productie_audio-video\Laboratorul1\Business Logic\obj\Debug\net8.0\Business Logic.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Magda\Desktop\An3-sem2\Editare_AudioVideo-laborator\Editare_si_productie_audio-video\Laboratorul1\Business Logic\obj\Debug\net8.0\Business Logic.AssemblyInfoInputs.cache
+C:\Users\Magda\Desktop\An3-sem2\Editare_AudioVideo-laborator\Editare_si_productie_audio-video\Laboratorul1\Business Logic\obj\Debug\net8.0\Business Logic.AssemblyInfo.cs
+C:\Users\Magda\Desktop\An3-sem2\Editare_AudioVideo-laborator\Editare_si_productie_audio-video\Laboratorul1\Business Logic\obj\Debug\net8.0\Business Logic.csproj.CoreCompileInputs.cache
+C:\Users\Magda\Desktop\An3-sem2\Editare_AudioVideo-laborator\Editare_si_productie_audio-video\Laboratorul1\Business Logic\obj\Debug\net8.0\Business Logic.sourcelink.json

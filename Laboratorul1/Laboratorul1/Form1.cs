@@ -1,15 +1,6 @@
-﻿using Emgu.CV.Structure;
-using Emgu.CV;
+﻿using Emgu.CV;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Drawing.Text;
 using Emgu.CV.UI;
 
 
@@ -17,7 +8,7 @@ namespace Laboratorul1
 { 
     public partial class Form1 : Form
     {
-        private Image image;
+        private BusinessLogic.Image image;
         public Form1()
         { 
             InitializeComponent();
@@ -33,7 +24,7 @@ namespace Laboratorul1
             OpenFileDialog Openfile = new OpenFileDialog();
             if (Openfile.ShowDialog() == DialogResult.OK)
             {
-                image = new Image(Openfile.FileName);
+                image = new BusinessLogic.Image(Openfile.FileName);
                 pictureBox1.Image = image.OriginalImage.ToBitmap();
             }
         }
@@ -46,6 +37,10 @@ namespace Laboratorul1
                 v.HistogramCtrl.GenerateHistograms(image.OriginalImage, 255);
                 v.Show();
             }
+            else
+            {
+                MessageBox.Show("You have not loaded an image!");
+            }
         }
 
         private void btnTransformInGrayImage_Click(object sender, EventArgs e)
@@ -54,6 +49,10 @@ namespace Laboratorul1
             {
                 image.ConvertToGray();
                 pictureBox2.Image = image.GrayImage.ToBitmap();
+            }
+            else
+            {
+                MessageBox.Show("You have not loaded an image!");
             }
         }
 
@@ -73,5 +72,31 @@ namespace Laboratorul1
             }
         }
 
+        private void btnApplyGamma_Click(object sender, EventArgs e)
+        {
+            if (image != null)
+            {
+                double gamma = (double)numericUpDownGamma.Value;
+
+                image.ApplyGamma(gamma);
+                pictureBox2.Image = image.OriginalImage.ToBitmap();
+            }
+            else
+            {
+                MessageBox.Show("You have not loaded an image!");
+            }
+        }
+        private void comboBoxFilter_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if(image!=null)
+            {
+                image.ApplyColorFilter(comboBoxFilter);
+                pictureBox2.Image = image.OriginalImage.ToBitmap();
+            }
+             else
+            {
+                MessageBox.Show("You have not loaded an image!");
+            }
+        }
     }
 }

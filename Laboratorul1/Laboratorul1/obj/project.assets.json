@@ -440,6 +440,15 @@
             "related": ".xml"
           }
         }
+      },
+      "BusinessLogic/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/BusinessLogic.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BusinessLogic.dll": {}
+        }
       }
     },
     ".NETFramework,Version=v4.7.2/win": {
@@ -750,6 +759,15 @@
           "lib/net47/System.ValueTuple.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "BusinessLogic/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/BusinessLogic.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BusinessLogic.dll": {}
         }
       }
     },
@@ -1074,6 +1092,15 @@
           "lib/net47/System.ValueTuple.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "BusinessLogic/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/BusinessLogic.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BusinessLogic.dll": {}
         }
       }
     },
@@ -1400,6 +1427,15 @@
             "related": ".xml"
           }
         }
+      },
+      "BusinessLogic/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/BusinessLogic.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BusinessLogic.dll": {}
+        }
       }
     },
     ".NETFramework,Version=v4.7.2/win-x86": {
@@ -1723,6 +1759,15 @@
           "lib/net47/System.ValueTuple.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "BusinessLogic/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/BusinessLogic.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BusinessLogic.dll": {}
         }
       }
     }
@@ -2422,10 +2467,16 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "BusinessLogic/1.0.0": {
+      "type": "project",
+      "path": "../BusinessLogic/BusinessLogic.csproj",
+      "msbuildProject": "../BusinessLogic/BusinessLogic.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETFramework,Version=v4.7.2": [
+      "BusinessLogic >= 1.0.0",
       "Emgu.CV.UI >= 4.8.1.5350",
       "Emgu.CV.runtime.windows >= 4.8.1.5350",
       "Newtonsoft.Json >= 13.0.3"
@@ -2457,7 +2508,11 @@
       },
       "frameworks": {
         "net472": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Magda\\Desktop\\An3-sem2\\Editare_AudioVideo-laborator\\Editare_si_productie_audio-video\\Laboratorul1\\BusinessLogic\\BusinessLogic.csproj": {
+              "projectPath": "C:\\Users\\Magda\\Desktop\\An3-sem2\\Editare_AudioVideo-laborator\\Editare_si_productie_audio-video\\Laboratorul1\\BusinessLogic\\BusinessLogic.csproj"
+            }
+          }
         }
       },
       "restoreAuditProperties": {
