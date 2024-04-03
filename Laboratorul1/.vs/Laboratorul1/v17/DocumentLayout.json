@@ -3,15 +3,15 @@
   "WorkspaceRootPath": "C:\\Users\\Magda\\Desktop\\An3-sem2\\Editare_AudioVideo-laborator\\Editare_si_productie_audio-video\\Laboratorul1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0E3B0F61-B06D-4E4C-845E-6B358F1619C7}|BusinessLogic\\BusinessLogic.csproj|c:\\users\\magda\\desktop\\an3-sem2\\editare_audiovideo-laborator\\editare_si_productie_audio-video\\laboratorul1\\businesslogic\\image.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0E3B0F61-B06D-4E4C-845E-6B358F1619C7}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\image.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{402D075E-CE33-4D2F-8B36-B15E8B21EC6F}|Laboratorul1\\Laboratorul1.csproj|C:\\Users\\Magda\\Desktop\\An3-sem2\\Editare_AudioVideo-laborator\\Editare_si_productie_audio-video\\Laboratorul1\\laboratorul1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{402D075E-CE33-4D2F-8B36-B15E8B21EC6F}|Laboratorul1\\Laboratorul1.csproj|solutionrelative:laboratorul1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{402D075E-CE33-4D2F-8B36-B15E8B21EC6F}|Laboratorul1\\Laboratorul1.csproj|c:\\users\\magda\\desktop\\an3-sem2\\editare_audiovideo-laborator\\editare_si_productie_audio-video\\laboratorul1\\laboratorul1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{0E3B0F61-B06D-4E4C-845E-6B358F1619C7}|BusinessLogic\\BusinessLogic.csproj|c:\\users\\magda\\desktop\\an3-sem2\\editare_audiovideo-laborator\\editare_si_productie_audio-video\\laboratorul1\\businesslogic\\image.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E3B0F61-B06D-4E4C-845E-6B358F1619C7}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\image.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{402D075E-CE33-4D2F-8B36-B15E8B21EC6F}|Laboratorul1\\Laboratorul1.csproj|C:\\Users\\Magda\\Desktop\\An3-sem2\\Editare_AudioVideo-laborator\\Editare_si_productie_audio-video\\Laboratorul1\\laboratorul1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{402D075E-CE33-4D2F-8B36-B15E8B21EC6F}|Laboratorul1\\Laboratorul1.csproj|solutionrelative:laboratorul1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -22,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 255,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,26 +30,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Image.cs",
               "DocumentMoniker": "C:\\Users\\Magda\\Desktop\\An3-sem2\\Editare_AudioVideo-laborator\\Editare_si_productie_audio-video\\Laboratorul1\\BusinessLogic\\Image.cs",
               "RelativeDocumentMoniker": "BusinessLogic\\Image.cs",
               "ToolTip": "C:\\Users\\Magda\\Desktop\\An3-sem2\\Editare_AudioVideo-laborator\\Editare_si_productie_audio-video\\Laboratorul1\\BusinessLogic\\Image.cs",
               "RelativeToolTip": "BusinessLogic\\Image.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAANAAAA",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAjwBgAAAA8AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-20T19:17:10.723Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\Magda\\Desktop\\An3-sem2\\Editare_AudioVideo-laborator\\Editare_si_productie_audio-video\\Laboratorul1\\Laboratorul1\\Form1.cs",
               "RelativeDocumentMoniker": "Laboratorul1\\Form1.cs",
               "ToolTip": "C:\\Users\\Magda\\Desktop\\An3-sem2\\Editare_AudioVideo-laborator\\Editare_si_productie_audio-video\\Laboratorul1\\Laboratorul1\\Form1.cs",
               "RelativeToolTip": "Laboratorul1\\Form1.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAEAAAAAAAAAAAAAAAEMAAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-02-29T16:03:11.8Z",
               "EditorCaption": ""
