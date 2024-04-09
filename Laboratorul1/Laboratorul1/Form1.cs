@@ -5,7 +5,6 @@ using Emgu.CV.UI;
 using Emgu.CV.CvEnum;
 using Emgu.CV.Structure;
 using System.Drawing;
-using System.Diagnostics.Eventing.Reader;
 
 
 namespace Laboratorul1
@@ -22,11 +21,6 @@ namespace Laboratorul1
             InitializeComponent();
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnLoadImage_Click(object sender, EventArgs e)
         {  
             rect = Rectangle.Empty;
@@ -40,38 +34,12 @@ namespace Laboratorul1
 
         private void btnGenerateHistogram_Click(object sender, EventArgs e)
         {
-            if(image!=null)
-            {
-                HistogramViewer v = new HistogramViewer();
-                Image<Bgr, byte> sectionImage;
-                if (rect != Rectangle.Empty)
-                {
-                    sectionImage = image.OriginalImage.Clone();
-                    sectionImage.ROI = rect;
-                    v.HistogramCtrl.GenerateHistograms(sectionImage, 255);
-                }
-                else
-                {
-                    v.HistogramCtrl.GenerateHistograms(image.OriginalImage, 255);
-                }
-                    v.Show();
-            }
-            else
-            {
-                MessageBox.Show("You have not loaded an image!");
-            }
+            image.GenerateHistogram(new HistogramViewer(), rect);
         }
         private void btnTransformInGrayImage_Click(object sender, EventArgs e)
         {
-            if (image != null)
-            {
-                image.ConvertToGray();
-                pictureBox2.Image = image.GrayImage.ToBitmap();
-            }
-            else
-            {
-                MessageBox.Show("You have not loaded an image!");
-            }
+            image.ConvertToGray(rect);
+            pictureBox2.Image = image.ModifiedImage.ToBitmap();
         }
 
         private void btnBrightnessContrast_Click(object sender, EventArgs e)
@@ -79,75 +47,22 @@ namespace Laboratorul1
             double alpha = (double)numericUpDownAlpha.Value;
             int beta = (int)numericUpDownBeta.Value;
 
-            if (image != null)
-            {
-                var originalCopy = image.OriginalImage.Clone();
-                if (rect!=Rectangle.Empty)
-                {
-                    originalCopy.ROI = new Rectangle(rect.X, rect.Y, rect.Width, rect.Height);
-                    originalCopy._Mul(alpha);
-                    originalCopy.Add(new Bgr(beta, beta, beta));
-                    originalCopy.ROI = Rectangle.Empty;
-                    pictureBox2.Image = originalCopy.ToBitmap();
-                }
-                else
-                {
-                    image.AdjustBrightnessContrast(alpha, beta);
-                    pictureBox2.Image = image.BrightnessImage.ToBitmap();
-                }  
-            }
-            else
-            {
-                MessageBox.Show("You have not loaded an image!");
-            }
+            image.AdjustBrightnessContrast(alpha, beta, rect);
+            pictureBox2.Image = image.ModifiedImage.ToBitmap();
         }
 
         private void btnApplyGamma_Click(object sender, EventArgs e)
         {
             double gamma = (double)numericUpDownGamma.Value;
 
-            if (image != null)
-            {
-                var originalCopy = image.OriginalImage.Clone();
-                Bitmap originalBitmap = originalCopy.ToBitmap();
-
-                if (rect != Rectangle.Empty)
-                {
-                    originalCopy.ROI = rect;
-                    originalCopy._GammaCorrect(gamma);
-                    originalCopy.ROI = Rectangle.Empty;
-                    pictureBox2.Image = originalCopy.ToBitmap();
-                }
-                else
-                {
-                    originalCopy._GammaCorrect(gamma);
-                    pictureBox2.Image = originalCopy.ToBitmap();
-                }
-               }
-            else
-            {
-                MessageBox.Show("You have not loaded an image!");
-            }
+            image.ApplyGamma(gamma, rect);
+            pictureBox2.Image = image.ModifiedImage.ToBitmap();
         }
 
         private void comboBoxFilter_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (image != null)
-            {
-                if (rect != Rectangle.Empty)
-                {
-                    image.ApplyColorFilter(comboBoxFilter, rect);
-                }
-                else
-                {
-                    image.ApplyColorFilter(comboBoxFilter);
-                }
-                pictureBox2.Image = image.OriginalImage.ToBitmap();
-            }
-            else
-            {
-                MessageBox.Show("You have not loaded an image!");
-            }
+            image.ApplyColorFilter(comboBoxFilter, rect);
+            pictureBox2.Image = image.ModifiedImage.ToBitmap();
         }
 
         private void btnResize_Click(object sender, EventArgs e)
@@ -158,7 +73,7 @@ namespace Laboratorul1
                 Inter interpolationType = Emgu.CV.CvEnum.Inter.Cubic;
 
                 image.Resize(scaleFactor, interpolationType);
-                pictureBox2.Image = image.OriginalImage.ToBitmap();
+                pictureBox2.Image = image.ModifiedImage.ToBitmap();
             }
             else
             {
@@ -168,24 +83,12 @@ namespace Laboratorul1
 
         private void btnRotate_Click(object sender, EventArgs e)
         {
-            if (image != null)
-            {
-                double angle = Convert.ToDouble(numericUpDownAngle.Value);
-                Bgr color = new Bgr(0, 1, 0);
-                bool crop = false;
+            double angle = Convert.ToDouble(numericUpDownAngle.Value);
+            Bgr color = new Bgr(0, 1, 0);
+            bool crop = true; // ca sa il incadreze
 
-                image.Rotate(angle, color, crop);
-                pictureBox2.Image = image.OriginalImage.ToBitmap();
-            }
-            else
-            {
-                MessageBox.Show("You have not loaded an image!");
-            }
-        }
-
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-
+            image.Rotate(angle, color, crop, rect);
+            pictureBox2.Image = image.ModifiedImage.ToBitmap();
         }
 
         private void pictureBox1_MouseDown(object sender, MouseEventArgs e)
