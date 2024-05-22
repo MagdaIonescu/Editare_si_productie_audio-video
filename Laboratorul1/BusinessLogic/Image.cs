@@ -11,16 +11,13 @@ namespace BusinessLogic
     public class Image
     {
         public Image<Bgr, Byte> OriginalImage { get;  set; }
-
         private Image<Bgr, Byte> OriginalCopy { get; set; }
-     
         public Image<Bgr, Byte> ModifiedImage { get; private set; }
         public Image(string filename)
         {
             OriginalImage = new Image<Bgr, Byte>(filename);
             OriginalCopy = OriginalImage.Clone();
         }
-
         public void GenerateHistogram(HistogramViewer histogramViewer, Rectangle rect = default)
         {
             if (OriginalImage == null)
@@ -62,7 +59,6 @@ namespace BusinessLogic
             }
             ModifiedImage = modifiedImage;
         }
-
         public void AdjustBrightnessContrast(double alpha, int beta, Rectangle rect=default)
         {
             if (OriginalImage == null)
@@ -88,7 +84,6 @@ namespace BusinessLogic
 
             ModifiedImage= modifiedImage;
         }
-
         public void ApplyGamma(double gamma, Rectangle rect = default)
         {
             if (OriginalImage == null)
@@ -111,7 +106,6 @@ namespace BusinessLogic
 
             ModifiedImage = originalCopy;
         }
-
         public void ApplyColorFilter(ComboBox comboBox, Rectangle rect = default)
         {
             if (OriginalImage == null)
@@ -146,7 +140,6 @@ namespace BusinessLogic
             }
             ModifiedImage = outputImage;
         }
-
         private void ApplyColor(byte[,,] data, string selectedFilter, int i, int j)
         {
             switch (selectedFilter)

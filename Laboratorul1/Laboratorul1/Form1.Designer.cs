@@ -54,6 +54,8 @@
             this.panel5 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.btnForm2 = new System.Windows.Forms.Button();
+            this.btnBlendImages = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownAlpha)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownBeta)).BeginInit();
             this.panel1.SuspendLayout();
@@ -71,61 +73,61 @@
             // btnLoadImage
             // 
             this.btnLoadImage.BackColor = System.Drawing.SystemColors.Control;
-            this.btnLoadImage.Location = new System.Drawing.Point(5, 10);
+            this.btnLoadImage.Location = new System.Drawing.Point(6, 10);
             this.btnLoadImage.Name = "btnLoadImage";
-            this.btnLoadImage.Size = new System.Drawing.Size(136, 38);
+            this.btnLoadImage.Size = new System.Drawing.Size(151, 38);
             this.btnLoadImage.TabIndex = 2;
-            this.btnLoadImage.Text = "Load Image";
+            this.btnLoadImage.Text = "LOAD IMAGE";
             this.btnLoadImage.UseVisualStyleBackColor = false;
             this.btnLoadImage.Click += new System.EventHandler(this.btnLoadImage_Click);
             // 
             // btnGenerateHistogram
             // 
             this.btnGenerateHistogram.BackColor = System.Drawing.SystemColors.Control;
-            this.btnGenerateHistogram.Location = new System.Drawing.Point(5, 54);
+            this.btnGenerateHistogram.Location = new System.Drawing.Point(6, 54);
             this.btnGenerateHistogram.Name = "btnGenerateHistogram";
-            this.btnGenerateHistogram.Size = new System.Drawing.Size(106, 39);
+            this.btnGenerateHistogram.Size = new System.Drawing.Size(151, 39);
             this.btnGenerateHistogram.TabIndex = 3;
-            this.btnGenerateHistogram.Text = "Histogram";
+            this.btnGenerateHistogram.Text = "HISTOGRAM";
             this.btnGenerateHistogram.UseVisualStyleBackColor = false;
             this.btnGenerateHistogram.Click += new System.EventHandler(this.btnGenerateHistogram_Click);
             // 
             // btnTransformInGrayImage
             // 
             this.btnTransformInGrayImage.BackColor = System.Drawing.SystemColors.Control;
-            this.btnTransformInGrayImage.Location = new System.Drawing.Point(5, 99);
+            this.btnTransformInGrayImage.Location = new System.Drawing.Point(6, 99);
             this.btnTransformInGrayImage.Name = "btnTransformInGrayImage";
-            this.btnTransformInGrayImage.Size = new System.Drawing.Size(118, 38);
+            this.btnTransformInGrayImage.Size = new System.Drawing.Size(151, 38);
             this.btnTransformInGrayImage.TabIndex = 4;
-            this.btnTransformInGrayImage.Text = "Gray Image";
+            this.btnTransformInGrayImage.Text = "GRAY IMAGE";
             this.btnTransformInGrayImage.UseVisualStyleBackColor = false;
             this.btnTransformInGrayImage.Click += new System.EventHandler(this.btnTransformInGrayImage_Click);
             // 
             // btnBrightnessContrast
             // 
-            this.btnBrightnessContrast.Location = new System.Drawing.Point(141, 105);
+            this.btnBrightnessContrast.Location = new System.Drawing.Point(157, 105);
             this.btnBrightnessContrast.Name = "btnBrightnessContrast";
-            this.btnBrightnessContrast.Size = new System.Drawing.Size(118, 38);
+            this.btnBrightnessContrast.Size = new System.Drawing.Size(131, 38);
             this.btnBrightnessContrast.TabIndex = 8;
-            this.btnBrightnessContrast.Text = "Contrast";
+            this.btnBrightnessContrast.Text = "CONTRAST";
             this.btnBrightnessContrast.UseVisualStyleBackColor = true;
             this.btnBrightnessContrast.Click += new System.EventHandler(this.btnBrightnessContrast_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(31, 20);
+            this.label1.Location = new System.Drawing.Point(34, 20);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(115, 20);
+            this.label1.Size = new System.Drawing.Size(130, 20);
             this.label1.TabIndex = 9;
             this.label1.Text = "Value of alpha:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(31, 65);
+            this.label2.Location = new System.Drawing.Point(34, 65);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(108, 20);
+            this.label2.Size = new System.Drawing.Size(122, 20);
             this.label2.TabIndex = 10;
             this.label2.Text = "Value of beta:";
             // 
@@ -137,45 +139,45 @@
             0,
             0,
             65536});
-            this.numericUpDownAlpha.Location = new System.Drawing.Point(152, 18);
+            this.numericUpDownAlpha.Location = new System.Drawing.Point(169, 18);
             this.numericUpDownAlpha.Maximum = new decimal(new int[] {
             30,
             0,
             0,
             65536});
             this.numericUpDownAlpha.Name = "numericUpDownAlpha";
-            this.numericUpDownAlpha.Size = new System.Drawing.Size(107, 26);
+            this.numericUpDownAlpha.Size = new System.Drawing.Size(119, 26);
             this.numericUpDownAlpha.TabIndex = 11;
             // 
             // numericUpDownBeta
             // 
-            this.numericUpDownBeta.Location = new System.Drawing.Point(153, 63);
+            this.numericUpDownBeta.Location = new System.Drawing.Point(170, 63);
             this.numericUpDownBeta.Name = "numericUpDownBeta";
-            this.numericUpDownBeta.Size = new System.Drawing.Size(106, 26);
+            this.numericUpDownBeta.Size = new System.Drawing.Size(118, 26);
             this.numericUpDownBeta.TabIndex = 12;
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.Info;
+            this.panel1.BackColor = System.Drawing.Color.PeachPuff;
             this.panel1.Controls.Add(this.numericUpDownBeta);
             this.panel1.Controls.Add(this.numericUpDownAlpha);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.btnBrightnessContrast);
-            this.panel1.Location = new System.Drawing.Point(784, 34);
+            this.panel1.Location = new System.Drawing.Point(871, 34);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(270, 151);
+            this.panel1.Size = new System.Drawing.Size(300, 151);
             this.panel1.TabIndex = 13;
             // 
             // btnApplyGamma
             // 
             this.btnApplyGamma.BackColor = System.Drawing.SystemColors.Control;
             this.btnApplyGamma.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnApplyGamma.Location = new System.Drawing.Point(89, 66);
+            this.btnApplyGamma.Location = new System.Drawing.Point(99, 66);
             this.btnApplyGamma.Name = "btnApplyGamma";
-            this.btnApplyGamma.Size = new System.Drawing.Size(104, 41);
+            this.btnApplyGamma.Size = new System.Drawing.Size(116, 41);
             this.btnApplyGamma.TabIndex = 14;
-            this.btnApplyGamma.Text = "Gamma";
+            this.btnApplyGamma.Text = "GAMMA";
             this.btnApplyGamma.UseVisualStyleBackColor = false;
             this.btnApplyGamma.Click += new System.EventHandler(this.btnApplyGamma_Click);
             // 
@@ -184,7 +186,7 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(3, 20);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(129, 20);
+            this.label3.Size = new System.Drawing.Size(144, 20);
             this.label3.TabIndex = 16;
             this.label3.Text = "Value of gamma:";
             // 
@@ -196,14 +198,14 @@
             0,
             0,
             65536});
-            this.numericUpDownGamma.Location = new System.Drawing.Point(133, 18);
+            this.numericUpDownGamma.Location = new System.Drawing.Point(148, 18);
             this.numericUpDownGamma.Maximum = new decimal(new int[] {
             1,
             0,
             0,
             0});
             this.numericUpDownGamma.Name = "numericUpDownGamma";
-            this.numericUpDownGamma.Size = new System.Drawing.Size(60, 26);
+            this.numericUpDownGamma.Size = new System.Drawing.Size(67, 26);
             this.numericUpDownGamma.TabIndex = 17;
             // 
             // comboBoxFilter
@@ -214,19 +216,19 @@
             "Red",
             "Green",
             "Blue"});
-            this.comboBoxFilter.Location = new System.Drawing.Point(8, 27);
+            this.comboBoxFilter.Location = new System.Drawing.Point(9, 27);
             this.comboBoxFilter.Name = "comboBoxFilter";
-            this.comboBoxFilter.Size = new System.Drawing.Size(147, 28);
+            this.comboBoxFilter.Size = new System.Drawing.Size(163, 28);
             this.comboBoxFilter.TabIndex = 22;
             this.comboBoxFilter.SelectedIndexChanged += new System.EventHandler(this.comboBoxFilter_SelectedIndexChanged);
             // 
             // btnResize
             // 
-            this.btnResize.Location = new System.Drawing.Point(117, 43);
+            this.btnResize.Location = new System.Drawing.Point(130, 43);
             this.btnResize.Name = "btnResize";
-            this.btnResize.Size = new System.Drawing.Size(106, 36);
+            this.btnResize.Size = new System.Drawing.Size(118, 36);
             this.btnResize.TabIndex = 24;
-            this.btnResize.Text = "Resize";
+            this.btnResize.Text = "RESIZE";
             this.btnResize.UseVisualStyleBackColor = true;
             this.btnResize.Click += new System.EventHandler(this.btnResize_Click);
             // 
@@ -238,9 +240,9 @@
             0,
             0,
             131072});
-            this.numericUpDownScaleFactor.Location = new System.Drawing.Point(163, 14);
+            this.numericUpDownScaleFactor.Location = new System.Drawing.Point(181, 14);
             this.numericUpDownScaleFactor.Name = "numericUpDownScaleFactor";
-            this.numericUpDownScaleFactor.Size = new System.Drawing.Size(67, 26);
+            this.numericUpDownScaleFactor.Size = new System.Drawing.Size(74, 26);
             this.numericUpDownScaleFactor.TabIndex = 26;
             this.numericUpDownScaleFactor.Value = new decimal(new int[] {
             1,
@@ -250,41 +252,41 @@
             // 
             // numericUpDownAngle
             // 
-            this.numericUpDownAngle.Location = new System.Drawing.Point(161, 103);
+            this.numericUpDownAngle.Location = new System.Drawing.Point(179, 103);
             this.numericUpDownAngle.Name = "numericUpDownAngle";
-            this.numericUpDownAngle.Size = new System.Drawing.Size(69, 26);
+            this.numericUpDownAngle.Size = new System.Drawing.Size(77, 26);
             this.numericUpDownAngle.TabIndex = 27;
             // 
             // btnRotate
             // 
-            this.btnRotate.Location = new System.Drawing.Point(123, 135);
+            this.btnRotate.Location = new System.Drawing.Point(137, 135);
             this.btnRotate.Name = "btnRotate";
-            this.btnRotate.Size = new System.Drawing.Size(100, 34);
+            this.btnRotate.Size = new System.Drawing.Size(111, 34);
             this.btnRotate.TabIndex = 25;
-            this.btnRotate.Text = "Rotate";
+            this.btnRotate.Text = "ROTATE";
             this.btnRotate.UseVisualStyleBackColor = true;
             this.btnRotate.Click += new System.EventHandler(this.btnRotate_Click);
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.SystemColors.Info;
+            this.panel2.BackColor = System.Drawing.Color.PeachPuff;
             this.panel2.Controls.Add(this.label5);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.numericUpDownScaleFactor);
             this.panel2.Controls.Add(this.numericUpDownAngle);
             this.panel2.Controls.Add(this.btnResize);
             this.panel2.Controls.Add(this.btnRotate);
-            this.panel2.Location = new System.Drawing.Point(819, 191);
+            this.panel2.Location = new System.Drawing.Point(910, 191);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(235, 178);
+            this.panel2.Size = new System.Drawing.Size(261, 178);
             this.panel2.TabIndex = 28;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(7, 109);
+            this.label5.Location = new System.Drawing.Point(8, 109);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(115, 20);
+            this.label5.Size = new System.Drawing.Size(130, 20);
             this.label5.TabIndex = 29;
             this.label5.Text = "Value of angle:";
             // 
@@ -293,56 +295,57 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(3, 20);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(158, 20);
+            this.label4.Size = new System.Drawing.Size(180, 20);
             this.label4.TabIndex = 28;
             this.label4.Text = "Value of scale factor:";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(9, 4);
+            this.label6.Location = new System.Drawing.Point(10, 4);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(48, 20);
+            this.label6.Size = new System.Drawing.Size(55, 20);
             this.label6.TabIndex = 29;
             this.label6.Text = "Filter:";
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.SystemColors.Info;
+            this.panel3.BackColor = System.Drawing.Color.PeachPuff;
             this.panel3.Controls.Add(this.label6);
             this.panel3.Controls.Add(this.comboBoxFilter);
-            this.panel3.Location = new System.Drawing.Point(890, 493);
+            this.panel3.Location = new System.Drawing.Point(989, 493);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(164, 63);
+            this.panel3.Size = new System.Drawing.Size(182, 63);
             this.panel3.TabIndex = 30;
             // 
             // panel4
             // 
-            this.panel4.BackColor = System.Drawing.SystemColors.Info;
+            this.panel4.BackColor = System.Drawing.Color.PeachPuff;
             this.panel4.Controls.Add(this.numericUpDownGamma);
             this.panel4.Controls.Add(this.label3);
             this.panel4.Controls.Add(this.btnApplyGamma);
-            this.panel4.Location = new System.Drawing.Point(858, 377);
+            this.panel4.Location = new System.Drawing.Point(953, 377);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(196, 110);
+            this.panel4.Size = new System.Drawing.Size(218, 110);
             this.panel4.TabIndex = 31;
             // 
             // panel5
             // 
-            this.panel5.BackColor = System.Drawing.SystemColors.Info;
+            this.panel5.BackColor = System.Drawing.Color.PeachPuff;
+            this.panel5.Controls.Add(this.btnBlendImages);
             this.panel5.Controls.Add(this.btnTransformInGrayImage);
             this.panel5.Controls.Add(this.btnGenerateHistogram);
             this.panel5.Controls.Add(this.btnLoadImage);
-            this.panel5.Location = new System.Drawing.Point(470, 23);
+            this.panel5.Location = new System.Drawing.Point(674, 34);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(149, 146);
+            this.panel5.Size = new System.Drawing.Size(166, 191);
             this.panel5.TabIndex = 32;
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(18, 23);
+            this.pictureBox1.Location = new System.Drawing.Point(105, 24);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(418, 418);
+            this.pictureBox1.Size = new System.Drawing.Size(464, 418);
             this.pictureBox1.TabIndex = 33;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Paint += new System.Windows.Forms.PaintEventHandler(this.pictureBox1_Paint);
@@ -352,18 +355,40 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(12, 466);
+            this.pictureBox2.Location = new System.Drawing.Point(105, 466);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(418, 418);
+            this.pictureBox2.Size = new System.Drawing.Size(464, 418);
             this.pictureBox2.TabIndex = 34;
             this.pictureBox2.TabStop = false;
             // 
+            // btnForm2
+            // 
+            this.btnForm2.BackColor = System.Drawing.Color.PeachPuff;
+            this.btnForm2.Location = new System.Drawing.Point(842, 562);
+            this.btnForm2.Name = "btnForm2";
+            this.btnForm2.Size = new System.Drawing.Size(329, 44);
+            this.btnForm2.TabIndex = 35;
+            this.btnForm2.Text = "GO TO VIDEO FORM";
+            this.btnForm2.UseVisualStyleBackColor = false;
+            this.btnForm2.Click += new System.EventHandler(this.btnForm2_Click);
+            // 
+            // btnBlendImages
+            // 
+            this.btnBlendImages.Location = new System.Drawing.Point(6, 143);
+            this.btnBlendImages.Name = "btnBlendImages";
+            this.btnBlendImages.Size = new System.Drawing.Size(151, 38);
+            this.btnBlendImages.TabIndex = 36;
+            this.btnBlendImages.Text = "BLENDING";
+            this.btnBlendImages.UseVisualStyleBackColor = true;
+            this.btnBlendImages.Click += new System.EventHandler(this.btnBlendImages_Click_1);
+            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ClientSize = new System.Drawing.Size(1058, 896);
+            this.ClientSize = new System.Drawing.Size(1176, 896);
+            this.Controls.Add(this.btnForm2);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel5);
@@ -371,8 +396,11 @@
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "IMAGE";
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownAlpha)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownBeta)).EndInit();
             this.panel1.ResumeLayout(false);
@@ -420,6 +448,8 @@
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Button btnForm2;
+        private System.Windows.Forms.Button btnBlendImages;
     }
 }
 

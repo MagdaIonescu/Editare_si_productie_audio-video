@@ -73,3 +73,4 @@ C:\Users\Magda\Desktop\An3-sem2\Editare_AudioVideo-laborator\Editare_si_producti
 C:\Users\Magda\Desktop\An3-sem2\Editare_AudioVideo-laborator\Editare_si_productie_audio-video\Laboratorul1\Laboratorul1\bin\x86\Debug\BusinessLogic.dll
 C:\Users\Magda\Desktop\An3-sem2\Editare_AudioVideo-laborator\Editare_si_productie_audio-video\Laboratorul1\Laboratorul1\bin\x86\Debug\BusinessLogic.pdb
 C:\Users\Magda\Desktop\An3-sem2\Editare_AudioVideo-laborator\Editare_si_productie_audio-video\Laboratorul1\Laboratorul1\bin\x86\Debug\BusinessLogic.dll.config
+C:\Users\Magda\Desktop\An3-sem2\Editare_AudioVideo-laborator\Editare_si_productie_audio-video\Laboratorul1\Laboratorul1\obj\x86\Debug\Laboratorul1.Form2.resources
