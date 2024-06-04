@@ -48,7 +48,6 @@ namespace Laboratorul1
         }
         private async void ReadAllFrames()
         {
-
             Mat m = new Mat();
             while (IsReadingFrame == true && FrameNo < TotalFrame)
             {
@@ -224,8 +223,8 @@ namespace Laboratorul1
 
         private void ApplyAbruptTransition()
         {
-            DisplayVideo(capture1, 10);  // Display first 10 seconds of the first video
-            DisplayVideo(capture2, 10);  // Display first 10 seconds of the second video
+            DisplayVideo(capture1, 10);  
+            DisplayVideo(capture2, 10);  
         }
 
         private void ApplyCrossDissolveTransition()
@@ -250,9 +249,16 @@ namespace Laboratorul1
                 pictureBox1.Refresh();
                 System.Threading.Thread.Sleep(1000 / (int)fps);
             }
-
-            // Display first 10 seconds of the second video
             DisplayVideo(capture2, 10 - transitionFrames / fps);
+        }
+
+        private void btnAudio_Click(object sender, EventArgs e)
+        {
+            Form3 videoForm = new Form3();
+            this.Hide();
+
+            videoForm.ShowDialog();
+            Show();
         }
 
         private void ApplyFadeToBlackTransition()
@@ -261,11 +267,9 @@ namespace Laboratorul1
             Mat m = new Mat();
             double fps1 = capture1.Get(CapProp.Fps);
             double fps2 = capture2.Get(CapProp.Fps);
-
-            // Display first 10 seconds of the first video
+           
             DisplayVideo(capture1, 10 - transitionFrames / fps1);
 
-            // Capture the last frames of the first 10 seconds of the first video and fade to black
             capture1.Set(CapProp.PosFrames, (int)(fps1 * 10) - transitionFrames);
 
             for (int i = 0; i < transitionFrames; i++)
@@ -277,8 +281,7 @@ namespace Laboratorul1
                 pictureBox1.Refresh();
                 System.Threading.Thread.Sleep(1000 / (int)fps1);
             }
-
-            // Display the white image at the start of the second video
+            
             for (int i = 0; i < transitionFrames; i++)
             {
                 capture2.Read(m);
@@ -289,7 +292,6 @@ namespace Laboratorul1
                 System.Threading.Thread.Sleep(1000 / (int)fps2);
             }
 
-            // Display first 10 seconds of the second video
             DisplayVideo(capture2, 10 - transitionFrames / fps2);
         }
 

@@ -52,10 +52,10 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.btnBlendImages = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btnForm2 = new System.Windows.Forms.Button();
-            this.btnBlendImages = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownAlpha)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownBeta)).BeginInit();
             this.panel1.SuspendLayout();
@@ -158,13 +158,13 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.PeachPuff;
+            this.panel1.BackColor = System.Drawing.Color.Cyan;
             this.panel1.Controls.Add(this.numericUpDownBeta);
             this.panel1.Controls.Add(this.numericUpDownAlpha);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.btnBrightnessContrast);
-            this.panel1.Location = new System.Drawing.Point(871, 34);
+            this.panel1.Location = new System.Drawing.Point(40, 436);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(300, 151);
             this.panel1.TabIndex = 13;
@@ -224,9 +224,9 @@
             // 
             // btnResize
             // 
-            this.btnResize.Location = new System.Drawing.Point(130, 43);
+            this.btnResize.Location = new System.Drawing.Point(447, 41);
             this.btnResize.Name = "btnResize";
-            this.btnResize.Size = new System.Drawing.Size(118, 36);
+            this.btnResize.Size = new System.Drawing.Size(118, 46);
             this.btnResize.TabIndex = 24;
             this.btnResize.Text = "RESIZE";
             this.btnResize.UseVisualStyleBackColor = true;
@@ -240,7 +240,7 @@
             0,
             0,
             131072});
-            this.numericUpDownScaleFactor.Location = new System.Drawing.Point(181, 14);
+            this.numericUpDownScaleFactor.Location = new System.Drawing.Point(221, 10);
             this.numericUpDownScaleFactor.Name = "numericUpDownScaleFactor";
             this.numericUpDownScaleFactor.Size = new System.Drawing.Size(74, 26);
             this.numericUpDownScaleFactor.TabIndex = 26;
@@ -252,16 +252,16 @@
             // 
             // numericUpDownAngle
             // 
-            this.numericUpDownAngle.Location = new System.Drawing.Point(179, 103);
+            this.numericUpDownAngle.Location = new System.Drawing.Point(491, 9);
             this.numericUpDownAngle.Name = "numericUpDownAngle";
-            this.numericUpDownAngle.Size = new System.Drawing.Size(77, 26);
+            this.numericUpDownAngle.Size = new System.Drawing.Size(74, 26);
             this.numericUpDownAngle.TabIndex = 27;
             // 
             // btnRotate
             // 
-            this.btnRotate.Location = new System.Drawing.Point(137, 135);
+            this.btnRotate.Location = new System.Drawing.Point(177, 41);
             this.btnRotate.Name = "btnRotate";
-            this.btnRotate.Size = new System.Drawing.Size(111, 34);
+            this.btnRotate.Size = new System.Drawing.Size(118, 46);
             this.btnRotate.TabIndex = 25;
             this.btnRotate.Text = "ROTATE";
             this.btnRotate.UseVisualStyleBackColor = true;
@@ -269,22 +269,22 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.PeachPuff;
+            this.panel2.BackColor = System.Drawing.Color.Cyan;
             this.panel2.Controls.Add(this.label5);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.numericUpDownScaleFactor);
             this.panel2.Controls.Add(this.numericUpDownAngle);
             this.panel2.Controls.Add(this.btnResize);
             this.panel2.Controls.Add(this.btnRotate);
-            this.panel2.Location = new System.Drawing.Point(910, 191);
+            this.panel2.Location = new System.Drawing.Point(382, 436);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(261, 178);
+            this.panel2.Size = new System.Drawing.Size(595, 102);
             this.panel2.TabIndex = 28;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(8, 109);
+            this.label5.Location = new System.Drawing.Point(355, 15);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(130, 20);
             this.label5.TabIndex = 29;
@@ -293,7 +293,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(3, 20);
+            this.label4.Location = new System.Drawing.Point(24, 16);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(180, 20);
             this.label4.TabIndex = 28;
@@ -310,67 +310,36 @@
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.PeachPuff;
+            this.panel3.BackColor = System.Drawing.Color.Cyan;
             this.panel3.Controls.Add(this.label6);
             this.panel3.Controls.Add(this.comboBoxFilter);
-            this.panel3.Location = new System.Drawing.Point(989, 493);
+            this.panel3.Location = new System.Drawing.Point(530, 219);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(182, 63);
             this.panel3.TabIndex = 30;
             // 
             // panel4
             // 
-            this.panel4.BackColor = System.Drawing.Color.PeachPuff;
+            this.panel4.BackColor = System.Drawing.Color.Cyan;
             this.panel4.Controls.Add(this.numericUpDownGamma);
             this.panel4.Controls.Add(this.label3);
             this.panel4.Controls.Add(this.btnApplyGamma);
-            this.panel4.Location = new System.Drawing.Point(953, 377);
+            this.panel4.Location = new System.Drawing.Point(530, 303);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(218, 110);
             this.panel4.TabIndex = 31;
             // 
             // panel5
             // 
-            this.panel5.BackColor = System.Drawing.Color.PeachPuff;
+            this.panel5.BackColor = System.Drawing.Color.Cyan;
             this.panel5.Controls.Add(this.btnBlendImages);
             this.panel5.Controls.Add(this.btnTransformInGrayImage);
             this.panel5.Controls.Add(this.btnGenerateHistogram);
             this.panel5.Controls.Add(this.btnLoadImage);
-            this.panel5.Location = new System.Drawing.Point(674, 34);
+            this.panel5.Location = new System.Drawing.Point(530, 12);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(166, 191);
             this.panel5.TabIndex = 32;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(105, 24);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(464, 418);
-            this.pictureBox1.TabIndex = 33;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Paint += new System.Windows.Forms.PaintEventHandler(this.pictureBox1_Paint);
-            this.pictureBox1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox1_MouseDown);
-            this.pictureBox1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pictureBox1_MouseMove);
-            this.pictureBox1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox1_MouseUp);
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Location = new System.Drawing.Point(105, 466);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(464, 418);
-            this.pictureBox2.TabIndex = 34;
-            this.pictureBox2.TabStop = false;
-            // 
-            // btnForm2
-            // 
-            this.btnForm2.BackColor = System.Drawing.Color.PeachPuff;
-            this.btnForm2.Location = new System.Drawing.Point(842, 562);
-            this.btnForm2.Name = "btnForm2";
-            this.btnForm2.Size = new System.Drawing.Size(329, 44);
-            this.btnForm2.TabIndex = 35;
-            this.btnForm2.Text = "GO TO VIDEO FORM";
-            this.btnForm2.UseVisualStyleBackColor = false;
-            this.btnForm2.Click += new System.EventHandler(this.btnForm2_Click);
             // 
             // btnBlendImages
             // 
@@ -382,12 +351,43 @@
             this.btnBlendImages.UseVisualStyleBackColor = true;
             this.btnBlendImages.Click += new System.EventHandler(this.btnBlendImages_Click_1);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(40, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(464, 418);
+            this.pictureBox1.TabIndex = 33;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Paint += new System.Windows.Forms.PaintEventHandler(this.pictureBox1_Paint);
+            this.pictureBox1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox1_MouseDown);
+            this.pictureBox1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pictureBox1_MouseMove);
+            this.pictureBox1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox1_MouseUp);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Location = new System.Drawing.Point(784, 12);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(464, 418);
+            this.pictureBox2.TabIndex = 34;
+            this.pictureBox2.TabStop = false;
+            // 
+            // btnForm2
+            // 
+            this.btnForm2.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnForm2.Location = new System.Drawing.Point(999, 462);
+            this.btnForm2.Name = "btnForm2";
+            this.btnForm2.Size = new System.Drawing.Size(249, 70);
+            this.btnForm2.TabIndex = 35;
+            this.btnForm2.Text = "GO TO VIDEO FORM";
+            this.btnForm2.UseVisualStyleBackColor = false;
+            this.btnForm2.Click += new System.EventHandler(this.btnForm2_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ClientSize = new System.Drawing.Size(1176, 896);
+            this.ClientSize = new System.Drawing.Size(1313, 896);
             this.Controls.Add(this.btnForm2);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);

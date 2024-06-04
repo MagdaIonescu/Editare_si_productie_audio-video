@@ -40,6 +40,7 @@
             this.btnStopVideo = new System.Windows.Forms.Button();
             this.btnLoadBackgroundImage = new System.Windows.Forms.Button();
             this.btnBackgroundSubtraction = new System.Windows.Forms.Button();
+            this.btnAudio = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.panel1.SuspendLayout();
@@ -90,7 +91,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.PeachPuff;
+            this.panel1.BackColor = System.Drawing.Color.Orchid;
             this.panel1.Controls.Add(this.btnApplyTransition);
             this.panel1.Controls.Add(this.comboBoxTransitions);
             this.panel1.Controls.Add(this.btnWriteVideo);
@@ -101,16 +102,16 @@
             this.panel1.Controls.Add(this.btnPlayVideo);
             this.panel1.Controls.Add(this.numericUpDown1);
             this.panel1.Controls.Add(this.btnLoadVideo);
-            this.panel1.Location = new System.Drawing.Point(839, 30);
+            this.panel1.Location = new System.Drawing.Point(828, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(347, 337);
+            this.panel1.Size = new System.Drawing.Size(378, 339);
             this.panel1.TabIndex = 6;
             // 
             // btnApplyTransition
             // 
             this.btnApplyTransition.Location = new System.Drawing.Point(205, 279);
             this.btnApplyTransition.Name = "btnApplyTransition";
-            this.btnApplyTransition.Size = new System.Drawing.Size(97, 28);
+            this.btnApplyTransition.Size = new System.Drawing.Size(119, 45);
             this.btnApplyTransition.TabIndex = 11;
             this.btnApplyTransition.Text = "Transition";
             this.btnApplyTransition.UseVisualStyleBackColor = true;
@@ -123,9 +124,9 @@
             "Abrupt",
             "Cross-Dissolve",
             "Fade to Black/White"});
-            this.comboBoxTransitions.Location = new System.Drawing.Point(25, 280);
+            this.comboBoxTransitions.Location = new System.Drawing.Point(25, 296);
             this.comboBoxTransitions.Name = "comboBoxTransitions";
-            this.comboBoxTransitions.Size = new System.Drawing.Size(162, 28);
+            this.comboBoxTransitions.Size = new System.Drawing.Size(174, 28);
             this.comboBoxTransitions.TabIndex = 10;
             // 
             // btnWriteVideo
@@ -168,11 +169,25 @@
             this.btnBackgroundSubtraction.UseVisualStyleBackColor = true;
             this.btnBackgroundSubtraction.Click += new System.EventHandler(this.btnBackgroundSubtraction_Click);
             // 
+            // btnAudio
+            // 
+            this.btnAudio.BackColor = System.Drawing.Color.Fuchsia;
+            this.btnAudio.Location = new System.Drawing.Point(972, 467);
+            this.btnAudio.Margin = new System.Windows.Forms.Padding(6);
+            this.btnAudio.Name = "btnAudio";
+            this.btnAudio.Padding = new System.Windows.Forms.Padding(4);
+            this.btnAudio.Size = new System.Drawing.Size(234, 59);
+            this.btnAudio.TabIndex = 7;
+            this.btnAudio.Text = "GO TO AUDIO FORM";
+            this.btnAudio.UseVisualStyleBackColor = false;
+            this.btnAudio.Click += new System.EventHandler(this.btnAudio_Click);
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1336, 679);
+            this.ClientSize = new System.Drawing.Size(1224, 635);
+            this.Controls.Add(this.btnAudio);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -201,5 +216,6 @@
         private System.Windows.Forms.Button btnWriteVideo;
         private System.Windows.Forms.Button btnApplyTransition;
         private System.Windows.Forms.ComboBox comboBoxTransitions;
+        private System.Windows.Forms.Button btnAudio;
     }
 }
