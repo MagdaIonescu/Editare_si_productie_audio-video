@@ -10,6 +10,8 @@ namespace BusinessLogic
 {
     public class Image
     {
+        public delegate void ImageModifiedEventHandler(object sender, EventArgs e);
+        public event ImageModifiedEventHandler ImageModified;
         public Image<Bgr, Byte> OriginalImage { get;  set; }
         private Image<Bgr, Byte> OriginalCopy { get; set; }
         public Image<Bgr, Byte> ModifiedImage { get; private set; }
@@ -18,14 +20,12 @@ namespace BusinessLogic
             OriginalImage = new Image<Bgr, Byte>(filename);
             OriginalCopy = OriginalImage.Clone();
         }
+        protected void OnImageModified()
+        {
+            ImageModified?.Invoke(this, EventArgs.Empty);
+        }
         public void GenerateHistogram(HistogramViewer histogramViewer, Rectangle rect = default)
         {
-            if (OriginalImage == null)
-            {
-                MessageBox.Show("No image loaded!");
-                return;
-            }
-
             var sectionImage = (rect != Rectangle.Empty) ? OriginalImage.Clone() : OriginalImage;
             sectionImage.ROI = rect;
             histogramViewer.HistogramCtrl.GenerateHistograms(sectionImage, 255);
@@ -33,13 +33,6 @@ namespace BusinessLogic
         }
         public void ConvertToGray(Rectangle rect=default)
         {
-            
-            if (OriginalImage == null)
-            {
-                MessageBox.Show("No image loaded!");
-                return;
-            }
-
             Image<Bgr, byte> modifiedImage = OriginalImage.Clone();
 
             if (rect != Rectangle.Empty)
@@ -58,15 +51,10 @@ namespace BusinessLogic
                 modifiedImage = gray.Convert<Bgr, byte>();
             }
             ModifiedImage = modifiedImage;
+            OnImageModified(); // declansare eveniment
         }
         public void AdjustBrightnessContrast(double alpha, int beta, Rectangle rect=default)
         {
-            if (OriginalImage == null)
-            {
-                MessageBox.Show("No image loaded!");
-                return;
-            }
-
             Image<Bgr, byte> modifiedImage = OriginalImage.Clone();
 
             if (rect != Rectangle.Empty)
@@ -83,15 +71,10 @@ namespace BusinessLogic
             }
 
             ModifiedImage= modifiedImage;
+            OnImageModified();
         }
         public void ApplyGamma(double gamma, Rectangle rect = default)
         {
-            if (OriginalImage == null)
-            {
-                MessageBox.Show("No image loaded!");
-                return;
-            }
-
             var originalCopy = OriginalImage.Clone();
             if (rect != Rectangle.Empty)
             {
@@ -105,15 +88,10 @@ namespace BusinessLogic
             }
 
             ModifiedImage = originalCopy;
+            OnImageModified();
         }
         public void ApplyColorFilter(ComboBox comboBox, Rectangle rect = default)
         {
-            if (OriginalImage == null)
-            {
-                MessageBox.Show("No image loaded!");
-                return;
-            }
-
             string selectedFilter = comboBox.SelectedItem.ToString();
             Image<Bgr, Byte> outputImage = OriginalCopy.Clone();
             var data = outputImage.Data; // data - tabloul de pixel
@@ -139,6 +117,7 @@ namespace BusinessLogic
                 }
             }
             ModifiedImage = outputImage;
+            OnImageModified();
         }
         private void ApplyColor(byte[,,] data, string selectedFilter, int i, int j)
         {
@@ -164,32 +143,28 @@ namespace BusinessLogic
         public void Resize(double scaleFactor,Inter interpolationType)
         {
             ModifiedImage = OriginalImage.Resize(scaleFactor, interpolationType);
+            OnImageModified();
         }
         public void Rotate(double angle, Bgr color, bool crop, Rectangle rect = default)
-        {
-            if (OriginalImage == null)
-            {
-                MessageBox.Show("No image loaded!");
-                return;
-            }
-
-            var originalCopy = OriginalImage.Clone();
+        { 
+            Image<Bgr, byte> modifiedImage = OriginalImage.Clone();
 
             if (rect != Rectangle.Empty)
             {
-                originalCopy.ROI = rect;
-                var rotatedSelection = originalCopy.Copy();
+                modifiedImage.ROI = rect;
+                Image<Bgr, byte> rotatedSelection = modifiedImage.Copy();
                 rotatedSelection = rotatedSelection.Rotate(angle, color, crop);
-                originalCopy.SetValue(new Bgr(1, 1, 1));
-                originalCopy._Mul(rotatedSelection);
-                originalCopy.ROI = Rectangle.Empty;
+                modifiedImage.SetValue(new Bgr(1, 1, 1));
+                modifiedImage._Mul(rotatedSelection);
+                modifiedImage.ROI = Rectangle.Empty;
             }
             else
             {
-                originalCopy = originalCopy.Rotate(angle, color, crop);
+                modifiedImage = OriginalImage.Rotate(angle, color, crop);
             }
 
-            ModifiedImage = originalCopy;
+            ModifiedImage = modifiedImage;
+            OnImageModified();
         }
     }
 }

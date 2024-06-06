@@ -164,7 +164,7 @@
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.btnBrightnessContrast);
-            this.panel1.Location = new System.Drawing.Point(40, 436);
+            this.panel1.Location = new System.Drawing.Point(671, 121);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(300, 151);
             this.panel1.TabIndex = 13;
@@ -224,7 +224,7 @@
             // 
             // btnResize
             // 
-            this.btnResize.Location = new System.Drawing.Point(447, 41);
+            this.btnResize.Location = new System.Drawing.Point(185, 47);
             this.btnResize.Name = "btnResize";
             this.btnResize.Size = new System.Drawing.Size(118, 46);
             this.btnResize.TabIndex = 24;
@@ -259,7 +259,7 @@
             // 
             // btnRotate
             // 
-            this.btnRotate.Location = new System.Drawing.Point(177, 41);
+            this.btnRotate.Location = new System.Drawing.Point(447, 50);
             this.btnRotate.Name = "btnRotate";
             this.btnRotate.Size = new System.Drawing.Size(118, 46);
             this.btnRotate.TabIndex = 25;
@@ -276,7 +276,7 @@
             this.panel2.Controls.Add(this.numericUpDownAngle);
             this.panel2.Controls.Add(this.btnResize);
             this.panel2.Controls.Add(this.btnRotate);
-            this.panel2.Location = new System.Drawing.Point(382, 436);
+            this.panel2.Location = new System.Drawing.Point(668, 12);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(595, 102);
             this.panel2.TabIndex = 28;
@@ -313,7 +313,7 @@
             this.panel3.BackColor = System.Drawing.Color.Cyan;
             this.panel3.Controls.Add(this.label6);
             this.panel3.Controls.Add(this.comboBoxFilter);
-            this.panel3.Location = new System.Drawing.Point(530, 219);
+            this.panel3.Location = new System.Drawing.Point(483, 209);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(182, 63);
             this.panel3.TabIndex = 30;
@@ -324,7 +324,7 @@
             this.panel4.Controls.Add(this.numericUpDownGamma);
             this.panel4.Controls.Add(this.label3);
             this.panel4.Controls.Add(this.btnApplyGamma);
-            this.panel4.Location = new System.Drawing.Point(530, 303);
+            this.panel4.Location = new System.Drawing.Point(483, 283);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(218, 110);
             this.panel4.TabIndex = 31;
@@ -336,7 +336,7 @@
             this.panel5.Controls.Add(this.btnTransformInGrayImage);
             this.panel5.Controls.Add(this.btnGenerateHistogram);
             this.panel5.Controls.Add(this.btnLoadImage);
-            this.panel5.Location = new System.Drawing.Point(530, 12);
+            this.panel5.Location = new System.Drawing.Point(483, 12);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(166, 191);
             this.panel5.TabIndex = 32;
@@ -355,7 +355,7 @@
             // 
             this.pictureBox1.Location = new System.Drawing.Point(40, 12);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(464, 418);
+            this.pictureBox1.Size = new System.Drawing.Size(422, 381);
             this.pictureBox1.TabIndex = 33;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Paint += new System.Windows.Forms.PaintEventHandler(this.pictureBox1_Paint);
@@ -365,16 +365,16 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(784, 12);
+            this.pictureBox2.Location = new System.Drawing.Point(40, 411);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(464, 418);
+            this.pictureBox2.Size = new System.Drawing.Size(422, 422);
             this.pictureBox2.TabIndex = 34;
             this.pictureBox2.TabStop = false;
             // 
             // btnForm2
             // 
             this.btnForm2.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btnForm2.Location = new System.Drawing.Point(999, 462);
+            this.btnForm2.Location = new System.Drawing.Point(1014, 303);
             this.btnForm2.Name = "btnForm2";
             this.btnForm2.Size = new System.Drawing.Size(249, 70);
             this.btnForm2.TabIndex = 35;

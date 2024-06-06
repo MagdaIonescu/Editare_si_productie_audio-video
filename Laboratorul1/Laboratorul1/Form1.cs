@@ -22,6 +22,13 @@ namespace Laboratorul1
         { 
             InitializeComponent();
         }
+        private void CheckIfImageLoaded()
+        {
+            if (image == null)
+            {
+                throw new InvalidOperationException("You have not loaded an image!");
+            }
+        }
         private void btnLoadImage_Click(object sender, EventArgs e)
         {  
             rect = Rectangle.Empty;
@@ -29,61 +36,106 @@ namespace Laboratorul1
             if (Openfile.ShowDialog() == DialogResult.OK)
             {
                 image = new BusinessLogic.Image(Openfile.FileName);
+                image.ImageModified += Image_ImageModified;
                 pictureBox1.Image = image.OriginalImage.ToBitmap();
             }
         }
+        private void Image_ImageModified(object sender, EventArgs e)
+        {
+            pictureBox2.Image = image.ModifiedImage.ToBitmap();
+        }
         private void btnGenerateHistogram_Click(object sender, EventArgs e)
         {
-            image.GenerateHistogram(new HistogramViewer(), rect);
+            try
+            {
+                CheckIfImageLoaded();
+                image.GenerateHistogram(new HistogramViewer(), rect);
+            }
+            catch (InvalidOperationException ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
         private void btnTransformInGrayImage_Click(object sender, EventArgs e)
         {
-            image.ConvertToGray(rect);
-            pictureBox2.Image = image.ModifiedImage.ToBitmap();
+            try
+            {
+                CheckIfImageLoaded();
+                image.ConvertToGray(rect);
+            }
+            catch (InvalidOperationException ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
         private void btnBrightnessContrast_Click(object sender, EventArgs e)
         {
-            double alpha = (double)numericUpDownAlpha.Value;
-            int beta = (int)numericUpDownBeta.Value;
-
-            image.AdjustBrightnessContrast(alpha, beta, rect);
-            pictureBox2.Image = image.ModifiedImage.ToBitmap();
+            try
+            {
+                CheckIfImageLoaded();
+                double alpha = (double)numericUpDownAlpha.Value;
+                int beta = (int)numericUpDownBeta.Value;
+                image.AdjustBrightnessContrast(alpha, beta, rect);
+            }
+            catch (InvalidOperationException ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
         private void btnApplyGamma_Click(object sender, EventArgs e)
         {
-            double gamma = (double)numericUpDownGamma.Value;
-
-            image.ApplyGamma(gamma, rect);
-            pictureBox2.Image = image.ModifiedImage.ToBitmap();
+            try
+            {
+                CheckIfImageLoaded();
+                double gamma = (double)numericUpDownGamma.Value;
+                image.ApplyGamma(gamma, rect);
+            }
+            catch (InvalidOperationException ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
         private void comboBoxFilter_SelectedIndexChanged(object sender, EventArgs e)
         {
-            image.ApplyColorFilter(comboBoxFilter, rect);
-            pictureBox2.Image = image.ModifiedImage.ToBitmap();
+            try
+            {
+                CheckIfImageLoaded();
+                string selectedFilter = comboBoxFilter.SelectedItem.ToString();
+                image.ApplyColorFilter(comboBoxFilter, rect);
+            }
+            catch (InvalidOperationException ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
         private void btnResize_Click(object sender, EventArgs e)
         {
-            if (image != null)
+            try
             {
+                CheckIfImageLoaded();
                 double scaleFactor = Convert.ToDouble(numericUpDownScaleFactor.Value);
                 Inter interpolationType = Emgu.CV.CvEnum.Inter.Cubic;
-
                 image.Resize(scaleFactor, interpolationType);
-                pictureBox2.Image = image.ModifiedImage.ToBitmap();
             }
-            else
+            catch (InvalidOperationException ex)
             {
-                MessageBox.Show("You have not loaded an image!");
+                MessageBox.Show(ex.Message);
             }
         }
         private void btnRotate_Click(object sender, EventArgs e)
         {
-            double angle = Convert.ToDouble(numericUpDownAngle.Value);
-            Bgr color = new Bgr(0, 1, 0);
-            bool crop = true; // ca sa il incadreze
-
-            image.Rotate(angle, color, crop, rect);
-            pictureBox2.Image = image.ModifiedImage.ToBitmap();
+            try
+            {
+                CheckIfImageLoaded();
+                double angle = Convert.ToDouble(numericUpDownAngle.Value);
+                Bgr color = new Bgr(1, 0, 1);
+                bool crop = true;
+                image.Rotate(angle, color, crop, rect);
+            }
+            catch (InvalidOperationException ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
         private void pictureBox1_MouseDown(object sender, MouseEventArgs e)
         {
@@ -135,8 +187,6 @@ namespace Laboratorul1
             videoForm.ShowDialog();
             Show();
         }
-
-        // ------------------ BLENDING ----------------------
         private async Task BlendImagesSmoothly(string folderPath, double alphaStep)
         {
             string[] fileNames = Directory.GetFiles(folderPath, "*.jpg");

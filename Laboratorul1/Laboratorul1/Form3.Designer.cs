@@ -31,7 +31,6 @@
             this.btnPlayAudio = new System.Windows.Forms.Button();
             this.btnConvertMp3ToWav = new System.Windows.Forms.Button();
             this.btnMixAudio = new System.Windows.Forms.Button();
-            this.btnTrimming = new System.Windows.Forms.Button();
             this.btnPitch = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -68,21 +67,10 @@
             this.btnMixAudio.UseVisualStyleBackColor = false;
             this.btnMixAudio.Click += new System.EventHandler(this.btnMixAudio_Click);
             // 
-            // btnTrimming
-            // 
-            this.btnTrimming.BackColor = System.Drawing.Color.DarkOrange;
-            this.btnTrimming.Location = new System.Drawing.Point(23, 203);
-            this.btnTrimming.Name = "btnTrimming";
-            this.btnTrimming.Size = new System.Drawing.Size(180, 52);
-            this.btnTrimming.TabIndex = 3;
-            this.btnTrimming.Text = "TRIMMING";
-            this.btnTrimming.UseVisualStyleBackColor = false;
-            this.btnTrimming.Click += new System.EventHandler(this.btnTrimming_Click);
-            // 
             // btnPitch
             // 
             this.btnPitch.BackColor = System.Drawing.Color.DarkOrange;
-            this.btnPitch.Location = new System.Drawing.Point(23, 261);
+            this.btnPitch.Location = new System.Drawing.Point(23, 203);
             this.btnPitch.Name = "btnPitch";
             this.btnPitch.Size = new System.Drawing.Size(180, 52);
             this.btnPitch.TabIndex = 4;
@@ -95,9 +83,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ClientSize = new System.Drawing.Size(347, 339);
+            this.ClientSize = new System.Drawing.Size(347, 265);
             this.Controls.Add(this.btnPitch);
-            this.Controls.Add(this.btnTrimming);
             this.Controls.Add(this.btnMixAudio);
             this.Controls.Add(this.btnConvertMp3ToWav);
             this.Controls.Add(this.btnPlayAudio);
@@ -112,7 +99,6 @@
         private System.Windows.Forms.Button btnPlayAudio;
         private System.Windows.Forms.Button btnConvertMp3ToWav;
         private System.Windows.Forms.Button btnMixAudio;
-        private System.Windows.Forms.Button btnTrimming;
         private System.Windows.Forms.Button btnPitch;
     }
 }
